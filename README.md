@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praktikum 1</title>
+    <title>Praktikum1</title>
 </head>
 <body bgcolor="pink">
     <h1 align=center font="bold">STTNF</h1>
