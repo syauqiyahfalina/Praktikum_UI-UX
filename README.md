@@ -1,4 +1,3 @@
-# Praktikum_UI-UX
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,13 +18,11 @@
             <th bgcolor="lightblue">NIM</th>
             <th bgcolor="lightblue">Nama Lengkap</th>
         </tr>
-
         <tr>
             <td bgcolor="white" align="center">1</td>
             <td bgcolor="white">0110225041</td>
             <td bgcolor="white">Syauqiyah Falina</td>
         </tr>
-        
         <tr>
             <td bgcolor="white" align="center">2</td>
             <td bgcolor="white">0110225042</td>
