@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Goose Bistro | Pizza-on-Demand</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: antiquewhite;
+            color: black;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: brown;
+        }
+        legend {
+            font-weight: bold;
+            color: black;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box; /* Ensures padding doesn't affect width */
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background: brown;
+            color: #fff;
+            border: 0;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background: brown;
+        }
+    </style>
+</head>
+<body>
+        <h1 align="center">Black Goose | Pizza-on-Demand</h1>
+        <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+
+        <form action="http://blackgoosebistro.com/pizza.php" method="post">
+        <form action="" method="post">
+        <table border="0">
+            <thead>
+                <tr>
+                    <th colspan="2">Your Information</th>
+                </tr>
+                <tr>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><label for="">Name</label></td>
+                <td><input type="text" name="" id="" placeholder="put your name"></td>
+            </tr>
+            <tr>
+                <td><label for="">Address</label></td>
+                <td><input type="text" name="" id="" placeholder="put your address"></td>
+            </tr>
+            <tr>
+                <td><label for="">Telephone Number</label></td>
+                <td><input type="text" name="" id="" placeholder="put your number"></td>
+            </tr>
+            <tr>
+                <td><label for="">Email</label></td>
+                <td><input type="text" name="" id="" placeholder="put your email"></td>
+            </tr>
+            <tr>
+                <td><label for="">Delivery Instruction:</label></td>
+                <td><textarea name="" id="" cols="21" rows="4"></textarea></td>
+            </tr>
+            </tbody>
+        </table>
+        <br>
+            <h2>Design Your Dream Pizza:</h2>
+            <h4>Pizza Specs</h4>
+            <h4>Crust (choose one):</h4>
+            <ul style="list-style: none;">
+                <li>
+                    <input type="radio" name="crust" value="cw">
+                    <label for="crust">Classic White</label>
+                </li>
+                <li>
+                    <input type="radio" name="crust" value="mg">
+                    <label for="crust">Multigrain</label>
+                </li>
+                <li>
+                    <input type="radio" name="crust" value="">
+                    <label for="crust">Cheese-stuffed crust</label>
+                </li>
+                <li>
+                    <input type="radio" name="crust" value="cw">
+                    <label for="crust">Gluten-free</label>
+                </li>
+            </ul>
+
+            <h4>Toppings (Choose as many as you want):</h4>
+            <ul style="list-style: none;">
+                <li>
+                    <input type="checkbox" name="toping" value="rs">
+                    <label for="crust">Red Sauce</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="toping" value="ws">
+                    <label for="crust">White Sauce</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="toping" value="mc">
+                    <label for="crust">Mozarella Cheese</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="toping" value="pp">
+                    <label for="crust">Pepperoni</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="toping" value="mr">
+                    <label for="crust">Mushroom</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="toping" value="pr">
+                    <label for="crust">Peppers</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="toping" value="ac">
+                    <label for="crust">Anchovies</label>
+                </li>
+            </ul>
+
+            <input type="submit" value="Bring me a pizza!">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+</body>
+</html>
