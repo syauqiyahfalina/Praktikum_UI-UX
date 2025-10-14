@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5 align=left>Tugas Membuat CV</h5>
+    <h2 align=center>SYAUQIYAH FALINA RAHMAN</h2> 
+    <h4>Kontak</h4>
+    <hr>
+    <p>syauqiyahfalrman@gmail.com</p>
+    <p>@syaflnr</p>
+    <p>Jl.Moch Kahfi 1, No.81</p>
+    <br>
+    <h4>Tentang Saya</h4>
+    <hr>
+    <p>Saya merupakan mahasiswa tahun pertama STT NF. Lulusan dari SMA Negeri 66 tahun 2025. Selama masa studi saya terbiasa menggunakan berbagai perangkat lunak komputer seperti Microsoft Word, Microsoft Excel, dan PowerPoint untuk menunjang pendidikan saya selama di SMA. Saya juga aktif dalam mengikuti organisasi yang ada di lingkungan sekitar seperti Karang Taruna dan Ektrakulikuler Artclub di sekolah.</p>
+    <br>
+    <h4>Pendidikan</h4>
+    <hr>
+        <ul type="disc">
+            <li>Min 6 Jakarta</li>
+            <li>SMP Negeri 85 Jakarta</li>
+            <li>SMA Negeri 66 Jakarta</li>
+        </ul>
+    <br>
+    <h4>Pengalaman Organisasi</h4>
+    <hr>
+         <ul type="disc">
+            <li>Karang Taruna - Sekretaris 1 (2022-2024)</li>
+            <li>Ekstrakulikuler Artclub - Divisi Acara (2023-2024)</li>
+            <li>Ekstrakulikuler Artclub - Bendahara (2024-2025)</li>
+            <li>IRAN - Sekretaris 2 (2022-2023)</li>
+        </ul>
+    </body>    
+    </html>
