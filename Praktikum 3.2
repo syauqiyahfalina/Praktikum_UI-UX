@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .header {
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .nav-tab {
+            padding: 10px 20px;
+            border-right: 1px solid #ccc;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+        
+        .nav-tab.active {
+            background-color: white;
+            border-bottom: 1px solid white;
+            margin-bottom: -1px;
+        }
+        
+        .form-content {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .image-section {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #999;
+            position: relative;
+            background-color: #f9f9f9;
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+        
+        .image-placeholder::before {
+            content: "×";
+            font-size: 60px;
+            transform: rotate(45deg);
+        }
+        
+        .upload-btn {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ccc;
+            padding: 5px 10px;
+            border: 1px solid #999;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        
+        .form-fields {
+            flex: 1;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .form-group label {
+            width: 120px;
+            display: inline-block;
+            font-weight: normal;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            flex: 1;
+            padding: 5px;
+            border: 1px solid #999;
+            font-size: 14px;
+        }
+        
+        .form-group textarea {
+            height: 60px;
+            resize: vertical;
+        }
+        
+        .checkbox-group {
+            margin: 15px 0;
+        }
+        
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        
+        .contact-section {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #ccc;
+        }
+        
+        .submit-btn {
+            background-color: green;
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        
+        .submit-btn:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header dengan URL bar simulasi -->
+        <div class="header">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 16px;">← → ↻ ⌂</span>
+                <div style="flex: 1; background: white; border: 1px solid #999; padding: 3px 10px;">
+                    http://
+                </div>
+                <span style="font-size: 16px;">⚙</span>
+            </div>
+        </div>
+        
+        <!-- Navigation Tabs -->
+        <div class="nav-tabs">
+            <a href="#" class="nav-tab active">Home</a>
+            <a href="#" class="nav-tab">Generate Link</a>
+            <a href="#" class="nav-tab">Transaction History</a>
+            <a href="#" class="nav-tab">Policy</a>
+            <a href="#" class="nav-tab">Logout</a>
+        </div>
+        
+        <!-- Form Content -->
+        <div class="form-content">
+            <!-- Image Upload Section -->
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div class="image-section">
+                    <div class="image-placeholder"></div>
+                    <label for="upload" class="upload-btn" align="center">Upload Picture</label>
+                    <input type="file" id="upload" name="upload" accept="image/*" style="display: none;">
+                </div>
+            </div>
+            
+            <!-- Form Fields -->
+            <div class="form-fields">
+                <form action="hasil_pesanan_barang.html" method="GET">
+                    <div class="form-group">
+                        <label for="title">Title Here</label>
+                        <input type="text" id="title" name="title" value="MacBook Air E800" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" required placeholder="description">Year      :  2009
+Model     :  
+Condition : Mint</textarea>>
+                        </textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="accountNumber">Account Number</label>
+                        <input type="text" id="accountNumber" name="accountNumber" value="123-456-789-0" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bank">Bank</label>
+                        <select id="bank" name="bank" required>
+                            <option value="HSBC" selected>HSBC</option>
+                            <option value="BCA">BCA</option>
+                            <option value="Mandiri">Mandiri</option>
+                            <option value="BNI">BNI</option>
+                            <option value="BRI">BRI</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="accountHolder">Account Holder</label>
+                        <input type="text" id="accountHolder" name="accountHolder" value="" placeholder="Name Here" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="transaction">Transaction</label>
+                        <input style="width: 50px; height: 12px;" type="number" name="count" id="">
+                        <span style="margin-left: 10px; font-size: 12px;"><cite>* If the transaction is for 3 person, choose 3 from the drop-down list</cite></span>
+                    </div>
+                    
+                    <!-- Checkboxes -->
+                    <div class="checkbox-group">
+                        <div style="margin-bottom: 5px;">
+                            <input type="checkbox" id="sendMobile" name="sendMobile" value="yes" checked>
+                            <label for="sendMobile">Send to Mobile Phone</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sendEmail" name="sendEmail" value="yes" checked>
+                            <label for="sendEmail">Send to Email</label>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="contact-section">
+                        <div class="form-group">
+                            <label for="mobilePhone">Send to Mobile Phone</label>
+                            <input type="tel" id="mobilePhone" name="mobilePhone" value="1234567890, 1234567891">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Send to Email</label>
+                            <input type="email" id="email" name="email" value="mfmm2g13@soton.ac.uk, fys_06@yahoo.com">
+                        </div>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Generate Nabr Link</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
