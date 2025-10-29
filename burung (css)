@@ -1,0 +1,79 @@
+body {
+    background-color: rgba(255, 212, 212, 0.562);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(95, 25, 25);
+}
+
+.b::first-letter {
+    font-weight: bold;
+    font-size: xx-large;
+    color: blue;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.gambar {
+    display: block;
+    border: 2px solid black;
+    border-radius: 1em;
+    padding-left: auto;
+    padding-right: auto;
+    border: 2px;
+    width: 600px;
+
+    img {
+        border-radius: 15%;
+    }
+}
+
+.isi {
+    text-align: justify;
+}
+
+.koleksi {
+    border: 2px;
+    display: block;
+    width: auto;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: brown;
+
+    img {
+        border-radius: 15%;
+    }
+}
+
+.koleksi img {
+    width: 300px;
+}
+
+.promo {
+    text-align: center;
+    border: 2px;
+}
+
+.promo {
+    text-align: center;
+    color: rgb(163, 12, 12);
+} 
+
+.ecom {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 235, 124);
+    padding: 10px 15px;
+    color: rgb(85, 23, 23);
+    border: 2px dashed rgb(85, 23, 23);
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
