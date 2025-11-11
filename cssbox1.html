@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOX 1</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+        /* kotak */
+        .kotak {
+            border: 3px solid black;
+            width: 300px;
+            height: 600px;
+            border-radius: 10%;
+        }
+
+        .item1 {
+            background-color: lightblue;
+        }
+
+        .item2 {
+            background-color: rgb(255, 146, 146);
+        }
+
+        .item3 {
+            background-color: rgb(255, 255, 198);
+        }
+
+        .item4 {
+            background-color: lightpink;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kotak item1"><p>1</p></div>
+        <div class="kotak item2"><p>2</p></div>
+        <div class="kotak item3"><p>3</p></div>
+        <div class="kotak item4"><p>4</p></div>
+    </div>
+</body>
+</html>
